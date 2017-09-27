@@ -182,7 +182,8 @@ public class Main extends ListenerAdapter {
                         cs + "remove [integer] - Removes song with this position in the list.\n" +
                         cs + "skip - Starts skip voting.\n" +
                         cs + "skipf - Skips to the next song in the list.\n" +
-                        cs + "stop - Stops playback and clears playlist.\n" +
+                        cs + "stop - Starts stop voting.\n" +
+                        cs + "stopf - Stops playback and clears playlist.\n" +
                         cs + "vote [\"topic\" | \"answer\" | end] (\"answers....\") - Voting System for Discord." +
                         "```").queue();
             } else if ((cs + "csymbol").equals(command[0]) && command.length == 2 && event.getMember().getPermissions().contains(Permission.MANAGE_SERVER)) {
