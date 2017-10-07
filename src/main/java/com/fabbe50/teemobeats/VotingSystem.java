@@ -5,7 +5,9 @@ import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.TextChannel;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by fabbe on 24/09/2017 - 6:23 PM.
@@ -16,9 +18,10 @@ class VotingSystem {
     static String[] options;
     static List<Member> voted = new ArrayList<>();
     private static int voteMax;
+    private static Message messageQuery;
 
     static void createPoll(TextChannel channel, String topic, String... resp) {
-        createPoll(channel, topic, -1, resp);
+        createPoll(channel, topic, 0, resp);
     }
 
     static void createPoll(TextChannel channel, String topic, int voteMax, String... resp) {
@@ -36,30 +39,31 @@ class VotingSystem {
             index++;
         }
 
-        channel.sendMessage("```" + composedQuestion + "```").queue();
+        channel.sendMessage("```" + composedQuestion + "```").queue(VotingSystem::saveMessage);
+    }
+
+    private static void saveMessage(Message message) {
+        messageQuery = message;
     }
 
     static int[] putVote(TextChannel channel, int i, Member member) {
         if (voteMax > voted.size() || voteMax == -1) {
             if (voted.isEmpty()) {
                 if (responses.length >= i) {
-                    channel.sendMessage(member.getEffectiveName() + " has voted!").queue();
-                    //channel.sendMessage("Voted for " + options[i] + "!").queue();
+                    channel.sendMessage(member.getEffectiveName() + " has voted!").queue(message -> message.delete().queueAfter(5, TimeUnit.SECONDS));
                     responses[i]++;
                     voted.add(member);
                 }
             } else {
                 if (responses.length >= i && !voted.contains(member)) {
-                    channel.sendMessage(member.getEffectiveName() + " has voted!").queue();
-                    //channel.sendMessage("Voted for " + options[i] + "!").queue();
+                    channel.sendMessage(member.getEffectiveName() + " has voted!").queue(message -> message.delete().queueAfter(5, TimeUnit.SECONDS));
                     responses[i]++;
                     voted.add(member);
                 } else {
-                    channel.sendMessage("You've already voted!").queue();
+                    channel.sendMessage("@" + member.getEffectiveName() + ", You've already voted!").queue(message -> message.delete().queueAfter(5, TimeUnit.SECONDS));
                 }
             }
         }
-        System.out.println(voteMax);
         if (voteMax == voted.size()) {
             return endPoll(channel);
         }
@@ -67,7 +71,7 @@ class VotingSystem {
     }
 
     static int[] endPoll(TextChannel channel) {
-        String composedResults = "Results for topic: " + topic + ".\n" + voted.size() + " people voted!\n";
+        String composedResults = "Results for topic: " + topic + "\n" + voted.size() + " people voted!\n";
 
         int index = 0;
         for (String s : options) {
@@ -77,7 +81,7 @@ class VotingSystem {
 
         channel.sendMessage("```" +
                 composedResults +
-                "```").queue();
+                "```").queue(message -> message.delete().queueAfter(5, TimeUnit.MINUTES));
 
 
         int[] temp;
@@ -86,7 +90,33 @@ class VotingSystem {
         options = null;
         topic = "";
         voted.clear();
+        messageQuery.delete().queue();
 
         return temp;
+    }
+
+    static void voteCommand(TextChannel channel, String[] command, Member member) {
+        if (VotingSystem.options != null) {
+            Music music = Main.music;
+            List<String> options = new ArrayList<>();
+            options.addAll(Arrays.asList(VotingSystem.options));
+            if (VotingSystem.topic.equals("Skip?") && options.contains(command[1])) {
+                music.skipVote(channel, VotingSystem.putVote(channel, options.indexOf(command[1]), member));
+            } else if (VotingSystem.topic.equals("Skip?") && Utils.isInteger(command[1])) {
+                music.skipVote(channel, VotingSystem.putVote(channel, (Integer.parseInt(command[1]) - 1), member));
+            } else if (VotingSystem.topic.equals("Stop?") && options.contains(command[1])) {
+                music.stopVote(channel, VotingSystem.putVote(channel, options.indexOf(command[1]), member));
+            } else if (VotingSystem.topic.equals("Stop?") && Utils.isInteger(command[1])) {
+                music.stopVote(channel, VotingSystem.putVote(channel, (Integer.parseInt(command[1]) - 1), member));
+            } else if (options.contains(command[1])) {
+                VotingSystem.putVote(channel, options.indexOf(command[1]), member);
+            } else if (Utils.isInteger(command[1])) {
+                VotingSystem.putVote(channel, (Integer.parseInt(command[1]) - 1), member);
+            } else if (command[1].equals("end")) {
+                VotingSystem.endPoll(channel);
+            }
+        }
+        else
+            VotingSystem.createPoll(channel, command[1], command[2].split(","));
     }
 }

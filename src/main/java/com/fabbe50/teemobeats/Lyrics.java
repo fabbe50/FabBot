@@ -16,15 +16,29 @@ import java.util.List;
 class Lyrics {
     private final static String songLyricsURL = "http://www.songlyrics.com";
 
+    static List<String> getSongLyrics(String band, String songTitle) throws IOException {
+        List<String> lyrics = new ArrayList<>();
 
-    static List<String> getSongLyrics( String band, String songTitle) throws IOException {
-        List<String> lyrics= new ArrayList<>();
-
-        Document doc = Jsoup.connect(songLyricsURL+ "/"+band.replace(" ", "-").toLowerCase()+"/"+songTitle.replace(" ", "-").toLowerCase()+"-lyrics/").get();
+        Document doc = Jsoup.connect(songLyricsURL + "/" + band.replace(" ", "-").toLowerCase() + "/"+songTitle.replace(" ", "-").toLowerCase() + "-lyrics/").get();
         String title = doc.title();
         System.out.println(title);
         Element p = doc.select("p.songLyricsV14").get(0);
-        for (Node e: p.childNodes()) {
+        for (Node e : p.childNodes()) {
+            if (e instanceof TextNode) {
+                lyrics.add(((TextNode)e).getWholeText());
+            }
+        }
+        return lyrics;
+    }
+
+    static List<String> getSongLyrics(String URL) throws IOException {
+        List<String> lyrics = new ArrayList<>();
+
+        Document doc = Jsoup.connect(URL).get();
+        String title = doc.title();
+        System.out.println(title);
+        Element p = doc.select("p.songLyricsV14").get(0);
+        for (Node e : p.childNodes()) {
             if (e instanceof TextNode) {
                 lyrics.add(((TextNode)e).getWholeText());
             }
