@@ -47,6 +47,7 @@ class Music {
     }
 
     void readPlaylist(final TextChannel channel, final String playlistURL, String channelName) throws IOException {
+        System.out.println(playlistURL);
         if (!new File(playlistURL).exists()) {
             channel.sendMessage("Playlist doesn't exist!").queue(message -> message.delete().queueAfter(30, TimeUnit.SECONDS));
             return;
@@ -233,7 +234,7 @@ class Music {
             }
             message2 = message2 + track.getInfo().title + " by " + track.getInfo().author + "\n";
         }
-        if (!Objects.equals(message2, "")) {
+        if (!Objects.equals(message2.substring(16), "")) {
             channel.sendMessage("```" + message2 + "```").queue(message -> message.delete().queueAfter(30, TimeUnit.SECONDS));
         }
         else
@@ -251,7 +252,7 @@ class Music {
             message2 = message2 + track.getInfo().title + " by " + track.getInfo().author + "\n";
             j++;
         }
-        if (!Objects.equals(message2, "")) {
+        if (!Objects.equals(message2.substring(16), "")) {
             channel.sendMessage("```" + message2 + "```").queue(message -> message.delete().queueAfter(30, TimeUnit.SECONDS));
         }
         else

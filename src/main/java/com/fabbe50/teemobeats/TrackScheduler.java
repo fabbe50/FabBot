@@ -36,7 +36,7 @@ public class TrackScheduler extends AudioEventAdapter {
     void stop() {
         player.stopTrack();
         queue.clear();
-        jda.getPresence().setGame(Game.of(".help"));
+        jda.getPresence().setGame(Game.of(Main.commandSymbol + "help"));
     }
 
     BlockingQueue<AudioTrack> getQueue() {

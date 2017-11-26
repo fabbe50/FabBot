@@ -21,7 +21,7 @@ class VotingSystem {
     private static Message messageQuery;
 
     static void createPoll(TextChannel channel, String topic, String... resp) {
-        createPoll(channel, topic, 0, resp);
+        createPoll(channel, topic, -1, resp);
     }
 
     static void createPoll(TextChannel channel, String topic, int voteMax, String... resp) {
@@ -29,12 +29,19 @@ class VotingSystem {
         options = resp.clone();
         VotingSystem.topic = topic;
         VotingSystem.voted.clear();
-        VotingSystem.voteMax = voteMax - 1;
+        VotingSystem.voteMax = voteMax;
+
+        for (int i = 0; i < options.length; i++) {
+            if (options[i].substring(0, 1).equals(" "))
+                options[i] = options[i].substring(1);
+        }
 
         String composedQuestion = "Topic: " + VotingSystem.topic + "\n";
 
         int index = 1;
         for (String s : resp) {
+            if (s.substring(0,1).equals(" "))
+                s = s.substring(1);
             composedQuestion = composedQuestion + index + ". " + s + "\n";
             index++;
         }

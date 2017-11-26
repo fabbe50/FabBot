@@ -1,5 +1,10 @@
 package com.fabbe50.teemobeats;
 
+import net.dv8tion.jda.core.entities.Emote;
+import net.dv8tion.jda.core.entities.Member;
+import net.dv8tion.jda.core.entities.Message;
+import net.dv8tion.jda.core.entities.TextChannel;
+
 import java.util.Random;
 import java.util.StringTokenizer;
 
@@ -47,5 +52,14 @@ public class Utils {
             lineLen += word.length();
         }
         return output.toString();
+    }
+
+    public static boolean isMemberInGuild(TextChannel channel, String name) {
+        for (Member member : channel.getGuild().getMembers()) {
+            if (member.getEffectiveName().equalsIgnoreCase(name)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
