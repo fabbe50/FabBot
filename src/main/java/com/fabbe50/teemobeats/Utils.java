@@ -7,6 +7,7 @@ import net.dv8tion.jda.core.entities.TextChannel;
 
 import java.util.Random;
 import java.util.StringTokenizer;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by fabbe on 26/09/2017 - 6:24 PM.
@@ -61,5 +62,29 @@ public class Utils {
             }
         }
         return false;
+    }
+
+    public static String getFormattedTimeInMinutes(long time) {
+        long minutes = TimeUnit.MILLISECONDS.toMinutes(time);
+        long seconds = TimeUnit.MILLISECONDS.toSeconds(time);
+        seconds = seconds - (minutes * 60);
+        return minutes + ":" + seconds;
+    }
+
+    public static int clampTo8Bit(int v) {
+        if ((v & ~0xFF) != 0) {
+            v = ((~v) >> 31) & 0xFF;
+        }
+        return v;
+    }
+
+    public static int RGBAclamped(int r, int g, int b, int a) {
+        if (((r | g | b | a) & ~0xFF) != 0) {
+            r = clampTo8Bit(r);
+            g = clampTo8Bit(g);
+            b = clampTo8Bit(b);
+            a = clampTo8Bit(a);
+        }
+        return (a << 24) + (r << 16) + (g << 8) + (b << 0);
     }
 }

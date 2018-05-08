@@ -37,12 +37,12 @@
         <dependency>
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
-            <version>3.3.0_271</version>
+            <version>3.6.0_362</version>
         </dependency>
         <dependency>
             <groupId>com.sedmelluq</groupId>
             <artifactId>lavaplayer</artifactId>
-            <version>1.2.42</version>
+            <version>1.2.63</version>
         </dependency>
         <dependency>
             <groupId>net.iharder</groupId>
@@ -72,27 +72,27 @@
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
-            <version>1.22.0</version>
+            <version>1.23.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.oauth-client</groupId>
             <artifactId>google-oauth-client-java6</artifactId>
-            <version>1.22.0</version>
+            <version>1.23.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.oauth-client</groupId>
             <artifactId>google-oauth-client-jetty</artifactId>
-            <version>1.22.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sachinhandiekar</groupId>
-            <artifactId>jMusixMatch</artifactId>
-            <version>1.1.4</version>
+            <version>1.23.0</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>at.mukprojects</groupId>
+            <artifactId>giphy4j</artifactId>
+            <version>1.0.1</version>
         </dependency>
     </dependencies>
 </project>
