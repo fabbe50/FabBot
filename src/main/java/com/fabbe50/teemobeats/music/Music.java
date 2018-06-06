@@ -578,6 +578,11 @@ public class Music {
         }
     }
 
+    public void setVolume(TextChannel channel, int volume) {
+        GuildMusicManager musicManager = getGuildAudioPlayer(channel.getGuild());
+        musicManager.player.setVolume(volume);
+    }
+
     private static void disconnectVoice(AudioManager audioManager) {
         if (audioManager.isConnected() || audioManager.isAttemptingToConnect()) {
             audioManager.closeAudioConnection();

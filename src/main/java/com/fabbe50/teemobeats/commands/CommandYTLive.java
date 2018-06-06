@@ -76,7 +76,7 @@ public class CommandYTLive implements Command {
                     channel.sendMessage(builder.build()).queue(message1 -> message1.delete().queueAfter(15, TimeUnit.SECONDS));
                 } else if (command[1].equalsIgnoreCase("desc")) {
                     builder.setDescription("Set announcement message to: \n").appendDescription(command[2]);
-                    DataHandler.overrideTextfile(guild, "announcemessage.cfg", command[2]);
+                    DataHandler.overrideTextFile(guild, "announcemessage.cfg", command[2]);
                     DataHandler.updateYTMessage();
                     channel.sendMessage(builder.build()).queue(message1 -> message1.delete().queueAfter(60, TimeUnit.SECONDS));
                 } else if (command[1].equalsIgnoreCase("clear")) {

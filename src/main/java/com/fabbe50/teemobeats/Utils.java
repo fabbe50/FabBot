@@ -1,8 +1,6 @@
 package com.fabbe50.teemobeats;
 
-import net.dv8tion.jda.core.entities.Emote;
 import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.TextChannel;
 
 import java.util.Random;
@@ -33,8 +31,7 @@ public class Utils {
             int index = (int) (rnd.nextFloat() * SALTCHARS.length());
             salt.append(SALTCHARS.charAt(index));
         }
-        String saltStr = salt.toString();
-        return saltStr;
+        return salt.toString();
 
     }
 
@@ -68,7 +65,18 @@ public class Utils {
         long minutes = TimeUnit.MILLISECONDS.toMinutes(time);
         long seconds = TimeUnit.MILLISECONDS.toSeconds(time);
         seconds = seconds - (minutes * 60);
-        return minutes + ":" + seconds;
+        return minutes + ":" + (seconds < 10 ? "0" + seconds : seconds);
+    }
+
+    public static String getFormattedTimeInDays(long time) {
+        long days = TimeUnit.MILLISECONDS.toDays(time);
+        long hours = TimeUnit.MILLISECONDS.toHours(time);
+        long minutes = TimeUnit.MILLISECONDS.toMinutes(time);
+        long seconds = TimeUnit.MILLISECONDS.toSeconds(time);
+        seconds = seconds - (minutes * 60);
+        minutes = minutes - (hours * 60);
+        hours = hours - (days * 24);
+        return hours + ":" + minutes + ":" + seconds;
     }
 
     public static int clampTo8Bit(int v) {
@@ -85,6 +93,6 @@ public class Utils {
             b = clampTo8Bit(b);
             a = clampTo8Bit(a);
         }
-        return (a << 24) + (r << 16) + (g << 8) + (b << 0);
+        return (a << 24) + (r << 16) + (g << 8) + (b);
     }
 }

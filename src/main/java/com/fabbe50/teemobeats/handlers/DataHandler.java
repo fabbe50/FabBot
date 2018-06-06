@@ -48,7 +48,7 @@ public class DataHandler {
             }
     }
 
-    public static void overrideTextfile(Guild guild, String filename, String text) throws IOException {
+    public static void overrideTextFile(Guild guild, String filename, String text) throws IOException {
         List<String> lines = new ArrayList<>();
         lines.add(text);
         Files.write(new File(System.getProperty("user.dir") + "\\data\\" + guild.getName().toLowerCase() + "\\" + filename).toPath(), lines, StandardOpenOption.TRUNCATE_EXISTING);
@@ -143,6 +143,7 @@ public class DataHandler {
         WILLIAM.add("https://media.giphy.com/media/1JSmbDdelsWvC/giphy.gif");
         WILLIAM.add("https://media.giphy.com/media/15a78dCc2ESIw/giphy.gif");
         WILLIAM.add("https://media.giphy.com/media/134vVkHV9wQtaw/giphy.gif");
+        WILLIAM.add("https://media.giphy.com/media/sBXHjZjmi8VrO/giphy.gif");
     }
 
     //Friendship gif storage
