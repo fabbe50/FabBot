@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3efe8e1e-7bc0-4c81-90a6-b86d20725205" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_jdk5_17_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/TeemoBeats.iml" afterPath="$PROJECT_DIR$/TeemoBeats.iml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,39 +39,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="256" column="39" lean-forward="true" selection-start-line="256" selection-start-column="39" selection-end-line="256" selection-end-column="39" />
+            <state relative-caret-position="410">
+              <caret line="250" column="39" lean-forward="false" selection-start-line="250" selection-start-column="39" selection-end-line="250" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Main#0;class#Main#0" expanded="false" />
                 <element signature="method#onGuildJoin#0;class#Main#0" expanded="false" />
                 <element signature="method#onGuildUpdateName#0;class#Main#0" expanded="false" />
                 <element signature="method#createRuntimeFiles#0;class#Main#0" expanded="false" />
-                <element signature="e#19192#19193#0" expanded="true" />
-                <element signature="e#19235#19236#0" expanded="true" />
-                <element signature="e#19293#19294#0" expanded="true" />
-                <element signature="e#19341#19342#0" expanded="true" />
+                <element signature="e#18856#18857#0" expanded="true" />
+                <element signature="e#18899#18900#0" expanded="true" />
+                <element signature="e#18957#18958#0" expanded="true" />
+                <element signature="e#19005#19006#0" expanded="true" />
                 <element signature="method#setCommandSymbol#0;class#Main#0" expanded="false" />
-                <element signature="e#19675#19676#0" expanded="true" />
-                <element signature="e#19713#19714#0" expanded="true" />
-                <element signature="e#19747#19748#0" expanded="true" />
-                <element signature="e#19773#19774#0" expanded="true" />
-                <element signature="e#19814#19815#0" expanded="true" />
-                <element signature="e#19844#19845#0" expanded="true" />
+                <element signature="e#19339#19340#0" expanded="true" />
+                <element signature="e#19377#19378#0" expanded="true" />
+                <element signature="e#19411#19412#0" expanded="true" />
+                <element signature="e#19437#19438#0" expanded="true" />
+                <element signature="e#19478#19479#0" expanded="true" />
+                <element signature="e#19508#19509#0" expanded="true" />
                 <element signature="method#usersServed#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommandHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="111" column="182" lean-forward="false" selection-start-line="111" selection-start-column="182" selection-end-line="111" selection-end-column="182" />
+            <state relative-caret-position="145">
+              <caret line="104" column="23" lean-forward="true" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -168,9 +166,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandPrefix.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/registry/CommandRegistry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandBlacklist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java" />
       </list>
     </option>
   </component>
@@ -181,7 +179,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-56" />
     <option name="y" value="-19" />
     <option name="width" value="1918" />
@@ -611,7 +609,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -623,13 +621,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27734807" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -643,7 +642,6 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -797,6 +795,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1640">
           <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,14 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="111" column="182" lean-forward="false" selection-start-line="111" selection-start-column="182" selection-end-line="111" selection-end-column="182" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1729">
@@ -1102,27 +1093,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="256" column="39" lean-forward="true" selection-start-line="256" selection-start-column="39" selection-end-line="256" selection-end-column="39" />
+        <state relative-caret-position="410">
+          <caret line="250" column="39" lean-forward="false" selection-start-line="250" selection-start-column="39" selection-end-line="250" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#onGuildJoin#0;class#Main#0" expanded="false" />
             <element signature="method#onGuildUpdateName#0;class#Main#0" expanded="false" />
             <element signature="method#createRuntimeFiles#0;class#Main#0" expanded="false" />
-            <element signature="e#19192#19193#0" expanded="true" />
-            <element signature="e#19235#19236#0" expanded="true" />
-            <element signature="e#19293#19294#0" expanded="true" />
-            <element signature="e#19341#19342#0" expanded="true" />
+            <element signature="e#18856#18857#0" expanded="true" />
+            <element signature="e#18899#18900#0" expanded="true" />
+            <element signature="e#18957#18958#0" expanded="true" />
+            <element signature="e#19005#19006#0" expanded="true" />
             <element signature="method#setCommandSymbol#0;class#Main#0" expanded="false" />
-            <element signature="e#19675#19676#0" expanded="true" />
-            <element signature="e#19713#19714#0" expanded="true" />
-            <element signature="e#19747#19748#0" expanded="true" />
-            <element signature="e#19773#19774#0" expanded="true" />
-            <element signature="e#19814#19815#0" expanded="true" />
-            <element signature="e#19844#19845#0" expanded="true" />
+            <element signature="e#19339#19340#0" expanded="true" />
+            <element signature="e#19377#19378#0" expanded="true" />
+            <element signature="e#19411#19412#0" expanded="true" />
+            <element signature="e#19437#19438#0" expanded="true" />
+            <element signature="e#19478#19479#0" expanded="true" />
+            <element signature="e#19508#19509#0" expanded="true" />
             <element signature="method#usersServed#0;class#Main#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="104" column="23" lean-forward="true" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

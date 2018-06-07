@@ -216,7 +216,6 @@ public class Main extends ListenerAdapter {
                     }
                 } else if (event.getMessage().getMentionedMembers().contains(guild.getMember(jda.getSelfUser())) && aiActive) {
                     String strings = event.getMessage().getContentRaw().replace(event.getMessage().getContentRaw().substring(event.getMessage().getContentRaw().indexOf("<@"), event.getMessage().getContentRaw().lastIndexOf(">")), "");
-
                     try (SessionsClient sessionsClient = SessionsClient.create()) {
                         SessionName session = SessionName.of("small-talk-d6632", UUID.randomUUID().toString());
                         TextInput.Builder textInput = TextInput.newBuilder().setText(strings).setLanguageCode("en-US");
@@ -226,12 +225,7 @@ public class Main extends ListenerAdapter {
                         System.out.println(session + ", intent: " + response + ", queryResult: " + queryResult);
                         if (!queryResult.getFulfillmentText().isEmpty())
                             channel.sendMessage(queryResult.getFulfillmentText()).queue();
-                        else if (!queryResult.getOutputContextsList().isEmpty()) {
-                            for (Context cxt : queryResult.getOutputContextsList()) {
-                                System.out.println(cxt);
-                                channel.sendMessage(cxt.toString()).queue();
-                            }
-                        } else {
+                        else {
                             switch (new Random().nextInt(9)) {
                                 case 0:
                                     channel.sendMessage("I'm sorry, I don't know what to respond to that.").queue();

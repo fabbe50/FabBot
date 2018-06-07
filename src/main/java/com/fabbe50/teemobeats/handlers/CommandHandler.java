@@ -112,9 +112,7 @@ public class CommandHandler {
                 if (hasPermission(member, commandCalled.newInstance().permission()) || "fabbe50#6969".equals(member.getUser().getName() + "#" + member.getUser().getDiscriminator())) {
                     return (commandCalled.newInstance()).execute(channel, guild, member, message);
                 }
-            } catch (InstantiationException e) {
-                e.printStackTrace();
-            } catch (IllegalAccessException e) {
+            } catch (InstantiationException | IllegalAccessException e) {
                 e.printStackTrace();
             }
         }
