@@ -101,8 +101,8 @@ public class Main extends ListenerAdapter {
             System.out.println("[Info]: AI disabled.");
         } else {
             System.out.println("[Info]: AI enabled.");
-            aiActive = false;
-            System.out.println("[Error]: AI Unreachable. Disabling.");
+            //aiActive = false;
+            //System.out.println("[Error]: AI Unreachable. Disabling.");
         }
         Logger logger = (Logger)LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
         logger.setLevel(Level.INFO);
@@ -215,25 +215,60 @@ public class Main extends ListenerAdapter {
                         }
                     }
                 } else if (event.getMessage().getMentionedMembers().contains(guild.getMember(jda.getSelfUser())) && aiActive) {
-                    String[] strings = event.getMessage().getContentRaw().split(" ", 2);
-                    if (strings.length == 2) {
-                        GoogleCredentials credentials = ComputeEngineCredentials.create();
-                        Storage storage = StorageOptions.newBuilder().setCredentials(credentials).build().getService();
-                        try (SessionsClient sessionsClient = SessionsClient.create()) {
-                            SessionName session = SessionName.of("small-talk-d6632", sessionID);
-                            TextInput.Builder textInput = TextInput.newBuilder().setText(strings[1]).setLanguageCode("en-US");
-                            QueryInput queryInput = QueryInput.newBuilder().setText(textInput).build();
-                            DetectIntentResponse response = sessionsClient.detectIntent(session, queryInput);
-                            QueryResult queryResult = response.getQueryResult();
+                    String strings = event.getMessage().getContentRaw().replace(event.getMessage().getContentRaw().substring(event.getMessage().getContentRaw().indexOf("<@"), event.getMessage().getContentRaw().lastIndexOf(">")), "");
+
+                    try (SessionsClient sessionsClient = SessionsClient.create()) {
+                        SessionName session = SessionName.of("small-talk-d6632", UUID.randomUUID().toString());
+                        TextInput.Builder textInput = TextInput.newBuilder().setText(strings).setLanguageCode("en-US");
+                        QueryInput queryInput = QueryInput.newBuilder().setText(textInput).build();
+                        DetectIntentResponse response = sessionsClient.detectIntent(session, queryInput);
+                        QueryResult queryResult = response.getQueryResult();
+                        System.out.println(session + ", intent: " + response + ", queryResult: " + queryResult);
+                        if (!queryResult.getFulfillmentText().isEmpty())
                             channel.sendMessage(queryResult.getFulfillmentText()).queue();
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                        else if (!queryResult.getOutputContextsList().isEmpty()) {
+                            for (Context cxt : queryResult.getOutputContextsList()) {
+                                System.out.println(cxt);
+                                channel.sendMessage(cxt.toString()).queue();
+                            }
+                        } else {
+                            switch (new Random().nextInt(9)) {
+                                case 0:
+                                    channel.sendMessage("I'm sorry, I don't know what to respond to that.").queue();
+                                    break;
+                                case 1:
+                                    channel.sendMessage("I don't know how to respond to that.").queue();
+                                    break;
+                                case 2:
+                                    channel.sendMessage("I can't answer, I'm sorry.").queue();
+                                    break;
+                                case 3:
+                                    channel.sendMessage("I don't know how to answer to this, but I'm learning.").queue();
+                                    break;
+                                case 4:
+                                    channel.sendMessage("I haven't learnt this yet, but I will.").queue();
+                                    break;
+                                case 5:
+                                    channel.sendMessage("Sorry, but I don't know what to respond with.").queue();
+                                    break;
+                                case 6:
+                                    channel.sendMessage("Sorry, I don't understand.").queue();
+                                    break;
+                                case 7:
+                                    channel.sendMessage("I can't make a response.").queue();
+                                    break;
+                                case 8:
+                                    channel.sendMessage("I don't know what you mean, but I'm learning.").queue();
+                                    break;
+                            }
                         }
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
                 } else if (event.getMessage().getMentionedMembers().contains(guild.getMember(jda.getSelfUser())) && !aiActive) {
                     String[] strings = event.getMessage().getContentRaw().split(" ", 2);
                     if (strings.length == 2) {
-                        
+
                     }
                 }
             }

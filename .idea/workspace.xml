@@ -10,6 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3efe8e1e-7bc0-4c81-90a6-b86d20725205" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_jdk5_17_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/TeemoBeats.iml" afterPath="$PROJECT_DIR$/TeemoBeats.iml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,22 +24,45 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/TeemoBeats$Main.coverage" NAME="Main Coverage Results" MODIFIED="1528387787055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.fabbe50.teemobeats.handlers.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1729">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="235" column="24" lean-forward="false" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="24" />
+            <state relative-caret-position="350">
+              <caret line="256" column="39" lean-forward="true" selection-start-line="256" selection-start-column="39" selection-end-line="256" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#Main#0" expanded="false" />
                 <element signature="method#Main#0;class#Main#0" expanded="false" />
-                <element signature="method#onReady#0;class#Main#0" expanded="false" />
                 <element signature="method#onGuildJoin#0;class#Main#0" expanded="false" />
                 <element signature="method#onGuildUpdateName#0;class#Main#0" expanded="false" />
                 <element signature="method#createRuntimeFiles#0;class#Main#0" expanded="false" />
+                <element signature="e#19192#19193#0" expanded="true" />
+                <element signature="e#19235#19236#0" expanded="true" />
+                <element signature="e#19293#19294#0" expanded="true" />
+                <element signature="e#19341#19342#0" expanded="true" />
                 <element signature="method#setCommandSymbol#0;class#Main#0" expanded="false" />
+                <element signature="e#19675#19676#0" expanded="true" />
+                <element signature="e#19713#19714#0" expanded="true" />
+                <element signature="e#19747#19748#0" expanded="true" />
+                <element signature="e#19773#19774#0" expanded="true" />
+                <element signature="e#19814#19815#0" expanded="true" />
+                <element signature="e#19844#19845#0" expanded="true" />
                 <element signature="method#usersServed#0;class#Main#0" expanded="false" />
               </folding>
             </state>
@@ -133,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandRich.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/ConsoleHandler.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/StatusHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandQuote.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/music/Music.java" />
@@ -144,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/registry/CommandRegistry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandBlacklist.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" />
       </list>
     </option>
@@ -155,9 +181,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-386" />
-    <option name="y" value="415" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-56" />
+    <option name="y" value="-19" />
     <option name="width" value="1918" />
     <option name="height" value="1038" />
   </component>
@@ -322,7 +348,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -357,7 +383,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.fabbe50.teemobeats.Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="--discordKey=MzU4NjI5NDM4NDQwNzM0NzIw.DJ_KuQ.PJv_okRoG2dfbILJ8fnr0sXhF2M --youtubeKey=AIzaSyBsCyEOxrUc16pX6c9ud4G3S9byQm_yc_Y --giphyKey=D4fsespgj1Vo7QBKyRecq8PrWTY4OUoq" />
+      <option name="PROGRAM_PARAMETERS" value="--discordKey=MzU4NjI5NDM4NDQwNzM0NzIw.DJ_KuQ.PJv_okRoG2dfbILJ8fnr0sXhF2M --youtubeKey=AIzaSyBsCyEOxrUc16pX6c9ud4G3S9byQm_yc_Y --giphyKey=D4fsespgj1Vo7QBKyRecq8PrWTY4OUoq --aiKey=run" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -585,19 +611,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32707182" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -607,7 +634,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3845304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3845304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -654,7 +681,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -841,6 +868,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
           <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -848,14 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="940">
           <caret line="65" column="53" lean-forward="false" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="110" column="21" lean-forward="false" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,19 +1092,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1729">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="235" column="24" lean-forward="false" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="24" />
+        <state relative-caret-position="350">
+          <caret line="256" column="39" lean-forward="true" selection-start-line="256" selection-start-column="39" selection-end-line="256" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#onReady#0;class#Main#0" expanded="false" />
             <element signature="method#onGuildJoin#0;class#Main#0" expanded="false" />
             <element signature="method#onGuildUpdateName#0;class#Main#0" expanded="false" />
             <element signature="method#createRuntimeFiles#0;class#Main#0" expanded="false" />
+            <element signature="e#19192#19193#0" expanded="true" />
+            <element signature="e#19235#19236#0" expanded="true" />
+            <element signature="e#19293#19294#0" expanded="true" />
+            <element signature="e#19341#19342#0" expanded="true" />
             <element signature="method#setCommandSymbol#0;class#Main#0" expanded="false" />
+            <element signature="e#19675#19676#0" expanded="true" />
+            <element signature="e#19713#19714#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19773#19774#0" expanded="true" />
+            <element signature="e#19814#19815#0" expanded="true" />
+            <element signature="e#19844#19845#0" expanded="true" />
             <element signature="method#usersServed#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -1156,7 +1192,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.3</last-edited>
+          <last-edited>Maven: at.mukprojects:giphy4j:1.0.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
