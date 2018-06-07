@@ -19,6 +19,7 @@ import net.dv8tion.jda.core.*;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.ReadyEvent;
 import net.dv8tion.jda.core.events.guild.GuildJoinEvent;
+import net.dv8tion.jda.core.events.guild.update.GuildUpdateNameEvent;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 import org.slf4j.LoggerFactory;
@@ -39,7 +40,7 @@ public class Main extends ListenerAdapter {
 
     //Stuff that works
     private static String STATUS = "Beta";
-    private static int BUILD = 157;
+    private static int BUILD = 159;
     private static String VERSION = "1.6.5" + STATUS + BUILD;
     public static Music music = new Music();
     private static String sessionID;
@@ -229,6 +230,11 @@ public class Main extends ListenerAdapter {
                             e.printStackTrace();
                         }
                     }
+                } else if (event.getMessage().getMentionedMembers().contains(guild.getMember(jda.getSelfUser())) && !aiActive) {
+                    String[] strings = event.getMessage().getContentRaw().split(" ", 2);
+                    if (strings.length == 2) {
+                        
+                    }
                 }
             }
         } catch (IOException e) {
@@ -259,6 +265,14 @@ public class Main extends ListenerAdapter {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    @Override
+    public void onGuildUpdateName(GuildUpdateNameEvent event) {
+        File guildDir = new File(System.getProperty("user.dir") + "\\data\\" + event.getOldName());
+        if (guildDir.exists()) {
+            guildDir.renameTo(new File(System.getProperty("user.dir") + "\\data\\" + event.getNewName()));
         }
     }
 

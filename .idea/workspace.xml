@@ -10,24 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3efe8e1e-7bc0-4c81-90a6-b86d20725205" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TeemoBeats_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/TeemoBeats_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/fabbe.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/fabbe.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/TeemoBeats.iml" afterPath="$PROJECT_DIR$/TeemoBeats.iml" />
-      <change beforePath="$PROJECT_DIR$/data/memories/prefix.cfg" afterPath="$PROJECT_DIR$/data/memories/prefix.cfg" />
-      <change beforePath="$PROJECT_DIR$/data/teemo is testing stuff/prefix.cfg" afterPath="$PROJECT_DIR$/data/teemo is testing stuff/prefix.cfg" />
-      <change beforePath="$PROJECT_DIR$/data/teemo is testing stuff/quotes.cfg" afterPath="$PROJECT_DIR$/data/teemo is testing stuff/quotes.cfg" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Utils.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandQuote.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandQuote.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandYTLive.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandYTLive.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/ConsoleHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/ConsoleHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/DataHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/DataHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/music/Music.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/music/Music.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/registry/CommandRegistry.java" afterPath="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/registry/CommandRegistry.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,23 +26,17 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="331">
+              <caret line="235" column="24" lean-forward="false" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#Main#0" expanded="false" />
+                <element signature="method#Main#0;class#Main#0" expanded="false" />
+                <element signature="method#onReady#0;class#Main#0" expanded="false" />
                 <element signature="method#onGuildJoin#0;class#Main#0" expanded="false" />
+                <element signature="method#onGuildUpdateName#0;class#Main#0" expanded="false" />
                 <element signature="method#createRuntimeFiles#0;class#Main#0" expanded="false" />
-                <element signature="e#16269#16270#0" expanded="true" />
-                <element signature="e#16312#16313#0" expanded="true" />
-                <element signature="e#16370#16371#0" expanded="true" />
-                <element signature="e#16418#16419#0" expanded="true" />
                 <element signature="method#setCommandSymbol#0;class#Main#0" expanded="false" />
-                <element signature="e#16752#16753#0" expanded="true" />
-                <element signature="e#16790#16791#0" expanded="true" />
-                <element signature="e#16824#16825#0" expanded="true" />
-                <element signature="e#16850#16851#0" expanded="true" />
-                <element signature="e#16891#16892#0" expanded="true" />
-                <element signature="e#16921#16922#0" expanded="true" />
                 <element signature="method#usersServed#0;class#Main#0" expanded="false" />
               </folding>
             </state>
@@ -166,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandPrefix.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/registry/CommandRegistry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/commands/CommandBlacklist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/handlers/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java" />
       </list>
     </option>
   </component>
@@ -178,7 +155,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-386" />
     <option name="y" value="415" />
     <option name="width" value="1918" />
@@ -608,7 +585,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -630,7 +607,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3845304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3845304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1097,23 +1074,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fabbe50/teemobeats/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="331">
+          <caret line="235" column="24" lean-forward="false" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#onReady#0;class#Main#0" expanded="false" />
             <element signature="method#onGuildJoin#0;class#Main#0" expanded="false" />
+            <element signature="method#onGuildUpdateName#0;class#Main#0" expanded="false" />
             <element signature="method#createRuntimeFiles#0;class#Main#0" expanded="false" />
-            <element signature="e#16269#16270#0" expanded="true" />
-            <element signature="e#16312#16313#0" expanded="true" />
-            <element signature="e#16370#16371#0" expanded="true" />
-            <element signature="e#16418#16419#0" expanded="true" />
             <element signature="method#setCommandSymbol#0;class#Main#0" expanded="false" />
-            <element signature="e#16752#16753#0" expanded="true" />
-            <element signature="e#16790#16791#0" expanded="true" />
-            <element signature="e#16824#16825#0" expanded="true" />
-            <element signature="e#16850#16851#0" expanded="true" />
-            <element signature="e#16891#16892#0" expanded="true" />
-            <element signature="e#16921#16922#0" expanded="true" />
             <element signature="method#usersServed#0;class#Main#0" expanded="false" />
           </folding>
         </state>
