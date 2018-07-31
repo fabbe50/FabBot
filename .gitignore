@@ -8,6 +8,7 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+.idea/*
 
 # =========================
 # Operating System Files
@@ -63,3 +64,7 @@ out/
 data/
 workspace.xml
 botlicense.json
+.idea/workspace.xml
+.idea/misc.xml
+.idea/dictionaries/fabbe.xml
+.idea/artifacts/TeemoBeats_jar.xml
